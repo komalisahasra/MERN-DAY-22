@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2f2f2f;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 40px;
+      color: #00ffc3;
+      letter-spacing: 2px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .filters button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid #00ffc3;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #1f1f1f;
+      border-radius: 30px;
+      padding: 8px 20px;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      width: 200px;
+      padding-left: 10px;
+    }
+
+    .search-box i {
+      color: #00ffc3;
+      font-size: 18px;
+    }
+
+    .movie-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 200px;
+      text-align: left;
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .movie-info {
+      padding: 10px;
+    }
+
+    .movie-info h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .movie-info p {
+      margin: 4px 0;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .heart-icon {
+      text-align: right;
+      padding-right: 10px;
+      font-size: 18px;
+      color: #00ffc3;
+    }
+  </style>
+</head>
+<body>
+
+<header>MOVIE LIST</header>
+
+<div class="filters">
+  <button>Marvel Movie</button>
+  <button>Funny Movie</button>
+  <button>Animation Movie</button>
+  <button>Web Series Movie</button>
+</div>
+
+<div class="search-container">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search..." value="bad">
+    <i class="fas fa-microphone"></i>
+  </div>
+</div>
+
+<div class="movie-grid">
+  <!-- Card 1 -->
+  <div class="movie-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png" alt="Breaking Bad">
+    <div class="movie-info">
+      <h4>Breaking Bad</h4>
+      <p>Type: series</p>
+      <p>Release Year: 2008–2013</p>
+    </div>
+    <div class="heart-icon">💚</div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="movie-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Good_the_bad_and_the_ugly_poster.jpg" alt="Good Bad Ugly">
+    <div class="movie-info">
+      <h4>The Good, the Bad and the Ugly</h4>
+      <p>Type: movie</p>
+    </div>
+    <div class="heart-icon">💚</div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="movie-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Bad_Boys_poster.jpg" alt="Bad Boys">
+    <div class="movie-info">
+      <h4>Bad Boys</h4>
+      <p>Type: movie</p>
+      <p>Release Year: 1995</p>
+    </div>
+    <div class="heart-icon">💚</div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="movie-card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Bad_Boys_II_poster.jpg" alt="Bad Boys II">
+    <div class="movie-info">
+      <h4>Bad Boys II</h4>
+      <p>Type: movie</p>
+      <p>Release Year: 2003</p>
+    </div>
+    <div class="heart-icon">💚</div>
+  </div>
+</div>
+
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
